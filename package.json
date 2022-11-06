@@ -1,0 +1,22 @@
+{
+  "name": "pnpm-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:alice": "pnpm -F alice... run build",
+    "clean": "rimraf packages/**/**/dist"
+  },
+  "keywords": [],
+  "author": "colgin",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "tsup": "^6.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
