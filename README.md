@@ -1,3 +1,11 @@
 ## description
 
-code for [monorepo in pnpm](https://www.colgin.me/pnpm-monorepo/)
+how to run watch script parallel correctly.
+
+How to reproduce
+
+```bash
+pnpm i
+pnpm clean
+pnpm run watch
+```

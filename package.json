@@ -6,7 +6,8 @@
   "scripts": {
     "build": "pnpm -r run build",
     "build:alice": "pnpm -F alice... run build",
-    "clean": "rimraf packages/**/**/dist"
+    "clean": "rimraf packages/**/**/dist",
+    "watch": "pnpm -r --parallel run watch"
   },
   "keywords": [],
   "author": "colgin",

@@ -65,9 +65,14 @@
 
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
-    "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
+    "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
+    "paths": {
+      "bar": ["./packages/bar/src/index.ts"],
+      "foo": ["./packages/foo/src/index.ts"],
+      "alice": ["./packages/alice/src/index.ts"],
+    }
   },
   "include": [
-    "packages/*/"
+    "packages/**/*/*.ts"
   ]
 }
