@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -r run build",
+    "build": "pnpm run clean && pnpm -r run build",
     "build:alice": "pnpm -F alice... run build",
-    "clean": "rimraf packages/**/**/dist"
+    "clean": "rimraf packages/**/**/dist",
+    "turbo:watch": "turbo run watch",
+    "turbo:build": "pnpm run clean && turbo run build"
   },
   "keywords": [],
   "author": "colgin",
@@ -14,6 +16,7 @@
   "devDependencies": {
     "eslint": "^8.27.0",
     "tsup": "^6.4.0",
+    "turbo": "^1.6.3",
     "typescript": "^4.8.4"
   },
   "dependencies": {

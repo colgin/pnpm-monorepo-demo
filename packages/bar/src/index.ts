@@ -1,3 +1,3 @@
 export function helloBar(name: string) {
-  return `hello ${name}, bar`
+  return `hello ${name}, bar!!??~`
 }

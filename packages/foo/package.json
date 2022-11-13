@@ -6,12 +6,15 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts --dts --format esm,cjs --sourcemap"
+    "build": "tsup src/index.ts --dts --format esm,cjs --sourcemap",
+    "watch": "tsup src/index.ts --watch --dts --format esm,cjs --sourcemap"
   },
   "keywords": [],
   "author": "colgin",
   "license": "ISC",
   "dependencies": {
-
+    "alice": "workspace:^1.0.0",
+    "bar": "workspace:^1.0.0",
+    "bob": "workspace:^1.0.0"
   }
 }
